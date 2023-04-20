@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <link rel="stylesheet" href="styles/style.css" media="all">
+    <link rel="stylesheet" href="styles/media-queries.css">
 </head>
 <body>
     <header>
@@ -27,10 +28,10 @@
     </nav>
     <main>
         <div class="side-nav">
-            <i class="material-symbols-rounded">home</i>
-            <i class="material-symbols-rounded">person</i>
-            <i class="material-symbols-rounded">build</i>
-            <i class="material-symbols-rounded">mail</i>
+            <a href="#home" class="material-symbols-rounded">home</a>
+            <a href="#about" class="material-symbols-rounded">person</a>
+            <a href="#projects" class="material-symbols-rounded">build</a>
+            <a href="#contact" class="material-symbols-rounded">mail</a>
         </div>
         <section id="home">
             <img src="https://placekitten.com/300/200" alt="My icon">
@@ -42,8 +43,8 @@
                 </div>
             </div>
             <div class="contacts no-select">
-                <a href="#" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-github"></a>
+                <a href="https://www.linkedin.com/in/kaio-fernando-02b95626b/" target="_blank" class="fa fa-linkedin"></a>
+                <a href="https://github.com/kaio05" target="_blank" class="fa fa-github"></a>
             </div>
             <div class="mail-me no-select">
                 <span>Message me</span>
@@ -56,7 +57,7 @@
             <h2>Front-end</h2>
             <p>My goal is to make responsive, beaultiful and functional websites, using technologies such as HTML, CSS and JavaScript</p>
             <div class="technologies">
-                <div class="html tech">
+                <div class="html tech ">
                     <img src="images/html5-logo-EF92D240D7-seeklogo.com.png" alt="HTML">
                     <p>Hypertext Markup Language (HTML) is used to set the content of a webpage, be it a text, an image, or a video!.</p>
                 </div>
@@ -100,12 +101,15 @@
         <section id="contact">
             <h1>Let's get in touch!</h1>
             <div class="contacts">
-                <a href="#">Linked in</a>
-                <a href="#">GitHub</a>
-                <a href="#">Gmail</a>
+                <div class="contacts no-select">
+                    <a href="https://www.linkedin.com/in/kaio-fernando-02b95626b/" target="_blank" class="fa fa-linkedin"></a>
+                    <a href="https://github.com/kaio05" target="_blank" class="fa fa-github"></a>
+                    <a href="#" class="material-symbols-rounded">mail</a>
+                </div>
             </div>
         </section>
     </main>
+    <footer><div>Made by Kaio</div></footer>
     <script src="index.js"></script>
 </body>
 </html>
