@@ -274,8 +274,14 @@ a {
 }
 
 #about > p {
+    max-width: 800px;
     padding: 10px;
     margin-bottom: 20px;
+}
+
+#about a, #projects a {
+    color: white;
+    font-weight: bold;
 }
 
 .tech {
@@ -303,40 +309,51 @@ a {
     color: #fff;
 }
 
-.project {
+.project-list {
     display: flex;
-    position: relative;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+
+.project {
+    height: 350px;
     background: #fff;
     padding: 20px;
     margin: 20px 0px;
     border-radius: 10px;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 
-.img-caption {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
+.project-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .img-caption > a {
     background-color: var(--color4);
-    padding: 50px 10px;
+    padding: 50px 40px;
     border-radius: 50%;
 }
 
-.project > img {
-    display: block;
-    opacity: 1;
-    z-index: 1;
+.project .img-caption {
+    position: absolute;
 }
 
-.project > img:hover {
-    opacity: 0.5;
-    transition: .3s;
+.button2 {
+    padding: 10px;
+    border: 2px solid var(--color2);
+    text-align: center;
 }
+
+
 
 #contact {
     text-align: center;

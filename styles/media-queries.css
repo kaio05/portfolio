@@ -47,15 +47,30 @@
 
     .tech {
         display: flex;
+        opacity: 0;
+        transition: 1s;
     }
 
-    .slideInLeft {
-        animation: slideInLeft 0.5s ease 1 forwards;
+    .tech.css {
+        flex-direction: row-reverse;
     }
 
-    @keyframes slideInLeft {
-        0% {transform: translate(-200px)}
-        100% {transform: translate(0);}
+    .slideIn {
+        animation: slideIn 0.5s ease 1 forwards;
     }
 
+    .slideOut {
+        animation: slideOut 0.5s ease 1 forwards;
+    }
+
+    @keyframes slideIn {
+        0% {transform: translate(-500px); opacity: 0; filter: blur(5px);}
+        100% {transform: translate(0); opacity: 1; filter: blur(0);}
+    }
+
+
+    @keyframes slideOut {
+        100% {transform: translate(-500px); opacity: 0; filter: blur(5px);}
+        0% {transform: translate(0); opacity: 1; filter: blur(0);}
+    }
 }
