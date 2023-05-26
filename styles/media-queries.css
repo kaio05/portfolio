@@ -14,16 +14,14 @@
     }
 
     .menu {
-        position: static;
+        background: var(--color3);
+        position: fixed;
+        top: 76px;
         display: flex;
         list-style-type: none;
     }
 
-    nav {
-        background: var(--color3);
-    }
-
-    .side-nav {
+    /* .side-nav {
         display: flex;
         flex-direction: column;
         position: fixed;
@@ -43,7 +41,7 @@
         color: white;
         transform: scale(150%);
         transition: .3s;
-    }
+    } */
 
     .tech {
         display: flex;

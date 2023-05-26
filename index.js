@@ -21,5 +21,12 @@ function checkIfOnScreen() {
     console.log('-------')
 }
 
+const header = document.querySelector('#header')
+const nav = document.querySelector('#nav')
 
-window.onscroll = function() {checkIfOnScreen()}
+// function menuSticky() {
+//     if (header.getBoundingClientRect().top)
+// }
+
+
+window.onscroll = function() {checkIfOnScreen(); sayHello()}
